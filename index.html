@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shahil - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Kumar Shahil</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="right">
+          <ul id="nav-links">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+           
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="firstsection">
+        <div class="leftsection">
+          <p class="intro">Hello, It's Me</p>
+          <p>Kumar Shahil</p>
+          <p class="intro">
+            And I'm a
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["Frontend Developer","Software developer", "Data Analyst"]'
+            ></span>
+          </p>
+          <div class="social-links-intro">
+            <a href="https://github.com/shahil26" target="_blank"
+              ><img src="/images/github.svg" alt="GitHub"
+            /></a>
+            <a href="https://www.linkedin.com/in/shahil26/" target="_blank"
+              ><img src="/images/linkedin.svg" alt="LinkedIn"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="/images/twitter.svg" alt="Twitter"
+            /></a>
+          </div>
+          <div class="download-button-container">
+            <a href="21MC3024_KUMAR_SHAHIL_resume.pdf" download="document.pdf" class="download-button">Resume</a>
+            <a href="#contact"  class="download-button">Hire Me</a>
+        </div>
+        </div>
+        <div class="rightsection">
+          <img src="/images/ks.jpg" alt="Kumar Shahil" />
+        </div>
+        <container class="about-me">
+          <h3>About Me</h3>
+          <p class="about">
+            I'm a front-end developer named Kumar Shahil, and I love creating
+            interesting web experiences. I like to transform designs
+            into dynamic interfaces, and I put a high value on clean, effective
+            code. Using JavaScript, HTML, and CSS as my tools, I'm delving into
+            React for projects that require even deeper immersion. Apart from
+            programming, I'm committed to investigating novel technologies and
+            surpassing limits via contests and contributions to open-source
+            projects.
+          </p>
+        </container>
+      </section>
+      <section class="skills" id="skill">
+        <h3>SKILLS</h3>
+        <div class="skill-card">
+          <img src="/images/html.png" alt="HTML" />
+          <div>HTML</div>
+        </div>
+        <div class="skill-card">
+          <img src="/images/css3.png" alt="CSS" />
+          <div>CSS</div>
+        </div>
+        <div class="skill-card">
+          <img src="/images/js1.png " alt="JavaScript" />
+          <div>JavaScript</div>
+        </div>
+        <div class="skill-card">
+          <img src="/images/images.png" alt="React" />
+          <div>React</div>
+        </div>
+        <div class="skill-card">
+          <img src="/images/cpp.png" alt="C++" />
+          <div>C++</div>
+        </div>
+        <div class="skill-card">
+          <img src="/images/python.png" alt="Python" />
+          <div>Python</div>
+        </div>
+        <div class="skill-card">
+          <img src="/images/bootstrap.png" alt="Bootstrap" />
+          <div>Bootstrap</div>
+        </div>
+        <div class="skill-card">
+         <img src="/images/php.png" alt="php">
+          <div>php</div>
+        </div>
+        <div class="skill-card">
+         <img src="/images/mysql.png" alt="mysql">
+          <div>MySQL</div>
+        </div>
+      </section>
+      <section class="projects" id="project">
+        <h3>PROJECTS</h3>
+        <div class="project-cards">
+          <div class="project-card">
+            <img src="/images/kaltarang.png" alt="Project 1 Image" />
+            <h4>Kaltarng'24</h4>
+            <div class="project-info">
+              <p>
+                The official website for RGIPT's cultural fest, Kaltarang '24,
+                features an immersive design and facilitates registration for
+                over 19 events, significantly enhancing user engagement and
+                streamlining event management.
+              </p>
+              <div class="multicolor-text">#3.js #HTML #CSS #JS</div>
+              <div class="project-link">
+                <a href="https://github.com/shahil26/Kaltarang-24"
+                  ><img
+                    alt="svgImg"
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8cGF0aCBkPSJNMTUsM0M4LjM3MywzLDMsOC4zNzMsMywxNWMwLDUuNjIzLDMuODcyLDEwLjMyOCw5LjA5MiwxMS42M0MxMi4wMzYsMjYuNDY4LDEyLDI2LjI4LDEyLDI2LjA0N3YtMi4wNTEgYy0wLjQ4NywwLTEuMzAzLDAtMS41MDgsMGMtMC44MjEsMC0xLjU1MS0wLjM1My0xLjkwNS0xLjAwOWMtMC4zOTMtMC43MjktMC40NjEtMS44NDQtMS40MzUtMi41MjYgYy0wLjI4OS0wLjIyNy0wLjA2OS0wLjQ4NiwwLjI2NC0wLjQ1MWMwLjYxNSwwLjE3NCwxLjEyNSwwLjU5NiwxLjYwNSwxLjIyMmMwLjQ3OCwwLjYyNywwLjcwMywwLjc2OSwxLjU5NiwwLjc2OSBjMC40MzMsMCwxLjA4MS0wLjAyNSwxLjY5MS0wLjEyMWMwLjMyOC0wLjgzMywwLjg5NS0xLjYsMS41ODgtMS45NjJjLTMuOTk2LTAuNDExLTUuOTAzLTIuMzk5LTUuOTAzLTUuMDk4IGMwLTEuMTYyLDAuNDk1LTIuMjg2LDEuMzM2LTMuMjMzQzkuMDUzLDEwLjY0Nyw4LjcwNiw4LjczLDkuNDM1LDhjMS43OTgsMCwyLjg4NSwxLjE2NiwzLjE0NiwxLjQ4MUMxMy40NzcsOS4xNzQsMTQuNDYxLDksMTUuNDk1LDkgYzEuMDM2LDAsMi4wMjQsMC4xNzQsMi45MjIsMC40ODNDMTguNjc1LDkuMTcsMTkuNzYzLDgsMjEuNTY1LDhjMC43MzIsMC43MzEsMC4zODEsMi42NTYsMC4xMDIsMy41OTQgYzAuODM2LDAuOTQ1LDEuMzI4LDIuMDY2LDEuMzI4LDMuMjI2YzAsMi42OTctMS45MDQsNC42ODQtNS44OTQsNS4wOTdDMTguMTk5LDIwLjQ5LDE5LDIyLjEsMTksMjMuMzEzdjIuNzM0IGMwLDAuMTA0LTAuMDIzLDAuMTc5LTAuMDM1LDAuMjY4QzIzLjY0MSwyNC42NzYsMjcsMjAuMjM2LDI3LDE1QzI3LDguMzczLDIxLjYyNywzLDE1LDN6Ij48L3BhdGg+Cjwvc3ZnPg=="
+                /></a>
+                <a href="https://kaltarang.com/landing.html"
+                  ><img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/ios-glyphs/30/000000/internet--v1.png"
+                    alt="internet--v1"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/cumfy.png" alt="Project 2 Image" />
+            <h4>Cumfy Foot</h4>
+            <div class="project-info">
+              <p>
+                Cumfy foot is a business-to-consumer and business-to-business
+                e-commerce website for footwear, offering users easy access to
+                over 15 different brands, all available in one convenient and
+                user-friendly online platform.
+              </p>
+              <div class="multicolor-text">#HTML #CSS #JS</div>
+              <div class="project-link">
+                <a href="https://github.com/shahil26/Cumfy-Foot"
+                  ><img
+                    alt="svgImg"
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8cGF0aCBkPSJNMTUsM0M4LjM3MywzLDMsOC4zNzMsMywxNWMwLDUuNjIzLDMuODcyLDEwLjMyOCw5LjA5MiwxMS42M0MxMi4wMzYsMjYuNDY4LDEyLDI2LjI4LDEyLDI2LjA0N3YtMi4wNTEgYy0wLjQ4NywwLTEuMzAzLDAtMS41MDgsMGMtMC44MjEsMC0xLjU1MS0wLjM1My0xLjkwNS0xLjAwOWMtMC4zOTMtMC43MjktMC40NjEtMS44NDQtMS40MzUtMi41MjYgYy0wLjI4OS0wLjIyNy0wLjA2OS0wLjQ4NiwwLjI2NC0wLjQ1MWMwLjYxNSwwLjE3NCwxLjEyNSwwLjU5NiwxLjYwNSwxLjIyMmMwLjQ3OCwwLjYyNywwLjcwMywwLjc2OSwxLjU5NiwwLjc2OSBjMC40MzMsMCwxLjA4MS0wLjAyNSwxLjY5MS0wLjEyMWMwLjMyOC0wLjgzMywwLjg5NS0xLjYsMS41ODgtMS45NjJjLTMuOTk2LTAuNDExLTUuOTAzLTIuMzk5LTUuOTAzLTUuMDk4IGMwLTEuMTYyLDAuNDk1LTIuMjg2LDEuMzM2LTMuMjMzQzkuMDUzLDEwLjY0Nyw4LjcwNiw4LjczLDkuNDM1LDhjMS43OTgsMCwyLjg4NSwxLjE2NiwzLjE0NiwxLjQ4MUMxMy40NzcsOS4xNzQsMTQuNDYxLDksMTUuNDk1LDkgYzEuMDM2LDAsMi4wMjQsMC4xNzQsMi45MjIsMC40ODNDMTguNjc1LDkuMTcsMTkuNzYzLDgsMjEuNTY1LDhjMC43MzIsMC43MzEsMC4zODEsMi42NTYsMC4xMDIsMy41OTQgYzAuODM2LDAuOTQ1LDEuMzI4LDIuMDY2LDEuMzI4LDMuMjI2YzAsMi42OTctMS45MDQsNC42ODQtNS44OTQsNS4wOTdDMTguMTk5LDIwLjQ5LDE5LDIyLjEsMTksMjMuMzEzdjIuNzM0IGMwLDAuMTA0LTAuMDIzLDAuMTc5LTAuMDM1LDAuMjY4QzIzLjY0MSwyNC42NzYsMjcsMjAuMjM2LDI3LDE1QzI3LDguMzczLDIxLjYyNywzLDE1LDN6Ij48L3BhdGg+Cjwvc3ZnPg=="
+                /></a>
+                <a href="https://shahil26.github.io/Cumfy-Foot/"
+                  ><img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/ios-glyphs/30/000000/internet--v1.png"
+                    alt="internet--v1"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="/images/quiz.jpeg" alt="Project 2 Image" />
+            <h4>Web Application</h4>
+            <div class="project-info">
+              <p>
+                The application features separate interfaces for presenters and
+                examinees and operates fully automated, eliminating the need for
+                human intervention during tests. It also includes a live
+                leaderboard.
+              </p>
+              <div class="multicolor-text">#HTML #CSS #JS #firebase</div>
+              <div class="project-link">
+                <a href="https://github.com/shahil26/Quiz_app"
+                  ><img
+                    alt="svgImg"
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8cGF0aCBkPSJNMTUsM0M4LjM3MywzLDMsOC4zNzMsMywxNWMwLDUuNjIzLDMuODcyLDEwLjMyOCw5LjA5MiwxMS42M0MxMi4wMzYsMjYuNDY4LDEyLDI2LjI4LDEyLDI2LjA0N3YtMi4wNTEgYy0wLjQ4NywwLTEuMzAzLDAtMS41MDgsMGMtMC44MjEsMC0xLjU1MS0wLjM1My0xLjkwNS0xLjAwOWMtMC4zOTMtMC43MjktMC40NjEtMS44NDQtMS40MzUtMi41MjYgYy0wLjI4OS0wLjIyNy0wLjA2OS0wLjQ4NiwwLjI2NC0wLjQ1MWMwLjYxNSwwLjE3NCwxLjEyNSwwLjU5NiwxLjYwNSwxLjIyMmMwLjQ3OCwwLjYyNywwLjcwMywwLjc2OSwxLjU5NiwwLjc2OSBjMC40MzMsMCwxLjA4MS0wLjAyNSwxLjY5MS0wLjEyMWMwLjMyOC0wLjgzMywwLjg5NS0xLjYsMS41ODgtMS45NjJjLTMuOTk2LTAuNDExLTUuOTAzLTIuMzk5LTUuOTAzLTUuMDk4IGMwLTEuMTYyLDAuNDk1LTIuMjg2LDEuMzM2LTMuMjMzQzkuMDUzLDEwLjY0Nyw4LjcwNiw4LjczLDkuNDM1LDhjMS43OTgsMCwyLjg4NSwxLjE2NiwzLjE0NiwxLjQ4MUMxMy40NzcsOS4xNzQsMTQuNDYxLDksMTUuNDk1LDkgYzEuMDM2LDAsMi4wMjQsMC4xNzQsMi45MjIsMC40ODNDMTguNjc1LDkuMTcsMTkuNzYzLDgsMjEuNTY1LDhjMC43MzIsMC43MzEsMC4zODEsMi42NTYsMC4xMDIsMy41OTQgYzAuODM2LDAuOTQ1LDEuMzI4LDIuMDY2LDEuMzI4LDMuMjI2YzAsMi42OTctMS45MDQsNC42ODQtNS44OTQsNS4wOTdDMTguMTk5LDIwLjQ5LDE5LDIyLjEsMTksMjMuMzEzdjIuNzM0IGMwLDAuMTA0LTAuMDIzLDAuMTc5LTAuMDM1LDAuMjY4QzIzLjY0MSwyNC42NzYsMjcsMjAuMjM2LDI3LDE1QzI3LDguMzczLDIxLjYyNywzLDE1LDN6Ij48L3BhdGg+Cjwvc3ZnPg=="
+                /></a>
+                <a href=""
+                  ><img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/ios-glyphs/30/000000/internet--v1.png"
+                    alt="internet--v1"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="/images/texttovideo.jpeg" alt="Project 2 Image" />
+            <h4>Text to Video</h4>
+            <div class="project-info">
+              <p>
+                The AI creates videos by combining over 1000 web-scraped images
+                with AI-generated audio from text prompts. It uses the raw text
+                for voiceovers, precisely syncing them with the images to
+                produce the final video.
+              </p>
+              <div class="multicolor-text">
+                #BeautifulSoup4 #Selenium #Decoder model
+              </div>
+              <div class="project-link">
+                <a href="https://github.com/shahil26/Text-to-Video-Converter"
+                  ><img
+                    alt="svgImg"
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8cGF0aCBkPSJNMTUsM0M4LjM3MywzLDMsOC4zNzMsMywxNWMwLDUuNjIzLDMuODcyLDEwLjMyOCw5LjA5MiwxMS42M0MxMi4wMzYsMjYuNDY4LDEyLDI2LjI4LDEyLDI2LjA0N3YtMi4wNTEgYy0wLjQ4NywwLTEuMzAzLDAtMS41MDgsMGMtMC44MjEsMC0xLjU1MS0wLjM1My0xLjkwNS0xLjAwOWMtMC4zOTMtMC43MjktMC40NjEtMS44NDQtMS40MzUtMi41MjYgYy0wLjI4OS0wLjIyNy0wLjA2OS0wLjQ4NiwwLjI2NC0wLjQ1MWMwLjYxNSwwLjE3NCwxLjEyNSwwLjU5NiwxLjYwNSwxLjIyMmMwLjQ3OCwwLjYyNywwLjcwMywwLjc2OSwxLjU5NiwwLjc2OSBjMC40MzMsMCwxLjA4MS0wLjAyNSwxLjY5MS0wLjEyMWMwLjMyOC0wLjgzMywwLjg5NS0xLjYsMS41ODgtMS45NjJjLTMuOTk2LTAuNDExLTUuOTAzLTIuMzk5LTUuOTAzLTUuMDk4IGMwLTEuMTYyLDAuNDk1LTIuMjg2LDEuMzM2LTMuMjMzQzkuMDUzLDEwLjY0Nyw4LjcwNiw4LjczLDkuNDM1LDhjMS43OTgsMCwyLjg4NSwxLjE2NiwzLjE0NiwxLjQ4MUMxMy40NzcsOS4xNzQsMTQuNDYxLDksMTUuNDk1LDkgYzEuMDM2LDAsMi4wMjQsMC4xNzQsMi45MjIsMC40ODNDMTguNjc1LDkuMTcsMTkuNzYzLDgsMjEuNTY1LDhjMC43MzIsMC43MzEsMC4zODEsMi42NTYsMC4xMDIsMy41OTQgYzAuODM2LDAuOTQ1LDEuMzI4LDIuMDY2LDEuMzI4LDMuMjI2YzAsMi42OTctMS45MDQsNC42ODQtNS44OTQsNS4wOTdDMTguMTk5LDIwLjQ5LDE5LDIyLjEsMTksMjMuMzEzdjIuNzM0IGMwLDAuMTA0LTAuMDIzLDAuMTc5LTAuMDM1LDAuMjY4QzIzLjY0MSwyNC42NzYsMjcsMjAuMjM2LDI3LDE1QzI3LDguMzczLDIxLjYyNywzLDE1LDN6Ij48L3BhdGg+Cjwvc3ZnPg=="
+                /></a>
+                <a href=""
+                  ><img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/ios-glyphs/30/000000/internet--v1.png"
+                    alt="internet--v1"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </section>
+      <section class="contact-me" id="contact">
+        <h3>Contact Me</h3>
+        <form action="https://formspree.io/f/mgegbekg" method="POST" class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+        <div class="model-container">
+            <model-viewer
+              src="earth_globe.glb"
+              alt="A 3D model"
+              auto-rotate
+              camera-controls
+            ></model-viewer>
+          </div>
+      </section>
+      <!-- 3D Model -->
+      
+      <footer class="footer">
+        <div class="footer-content">
+          <p>&copy; 2024 Kumar Shahil. All rights reserved.</p>
+          <div class="social-links">
+            <a href="https://github.com/shahil26" target="_blank"
+              ><img src="/images/github.svg" alt="GitHub"
+            /></a>
+            <a href="https://www.linkedin.com/in/shahil26/" target="_blank"
+              ><img src="/images/linkedin.svg" alt="LinkedIn"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="/images/twitter.svg" alt="Twitter"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
