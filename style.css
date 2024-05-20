@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(135deg, rgba(7, 4, 43, 0.8), rgba(7, 4, 43, 0.8)), url('/images/pexels-felixmittermeier-956999.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    animation: backgroundAnimation 15s ease infinite;
+}
+
+/* Keyframes for Background Animation */
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(7, 4, 43);
+    height: 80px;
+    padding: 0 20px;
+}
+nav .left {
+    font-size: 1.5rem;
+}
+nav .right ul {
+    display: flex;
+    justify-content: center;
+}
+nav .right ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+nav .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+nav .menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Specific link styles in the navbar */
+nav a {
+    color: #fff; /* Set the desired color for navbar links */
+}
+
+nav a:hover {
+    color: gold; /* Color on hover */
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(7, 4, 43);
+    color: #fff;
+    /* padding: 1rem; */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+main{
+    padding-top: 60px;
+}
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.firstsection > div {
+    width: 45%;
+}
+.leftsection {
+    font-size: 2.9rem;
+    margin: 5rem 0;
+    text-align: center;
+}
+.leftsection .intro {
+    font-size: 2rem;
+    text-align: center;
+}
+.rightsection img {
+    width: 70%;
+    margin: 1rem 0;
+    align-items: center;
+}
+.purple {
+    color: rgb(172, 122, 219);
+}
+ /* Cursor */
+.txt-type > .txt {
+border-right: 0.2rem solid #777;
+}
+.social-links-intro {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.social-links-intro a img {
+    width: 45px;
+    height: 45px;
+    transition: transform 0.3s ease;
+}
+
+.social-links-intro a:hover img {
+    transform: scale(1.4);
+}
+/* Style for the download button */
+.download-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 3rem;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: gold;
+    color: rgb(7, 4, 43);
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+
+
+.about-me {
+    background-color: rgb(7, 4, 43);
+    margin-top: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px white, 0 1px 3px white;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    width: 80%;
+}
+
+.about-me:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px white, 0 2px 4px white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-me {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.about{
+font-size: 1rem;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 2rem;
+    padding: 2rem;
+    background-color: rgb(7, 4, 43);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px white, 0 1px 3px white;
+}
+
+.skills h3 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    /* margin-bottom: 1rem; */
+}
+
+.skill-card {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    color: rgb(7, 4, 43);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid gold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    font-size: 1.2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 0;
+}
+
+.skill-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0));
+    border-radius: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.skill-card:hover::before {
+    opacity: 1;
+}
+
+.skill-card img {
+    width: 7rem;
+    height: 7rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 600px) {
+    .skill-card {
+        padding: 2rem;
+        font-size: 1.4rem;
+        width: 200px;
+    }
+    
+    .skill-card img {
+        width: 60px;
+        height: 60px;
+    }
+}
+.projects {
+    margin: 4rem 2rem;
+    padding: 2rem;
+    background-color: rgb(7, 4, 43);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px white, 0 1px 3px white;
+    animation: fadeInUp 1s ease; /* Add animation to the projects container */
+}
+
+.projects h3 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease 0.1s backwards; /* Add animation to heading */
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    animation: fadeInUp 1s ease 0.2s backwards; /* Add animation to project cards container */
+}
+
+.project-card {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    color: rgb(7, 4, 43);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid gold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    font-size: 1.2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease 0.3s backwards;
+    width: 250px;
+    height: 26rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.project-card img {
+    width: 100%;
+    height: 35%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+    animation: fadeInUp 1s ease 0.4s backwards; /* Add animation to images */
+}
+
+.project-info {
+    padding: 1rem 0;
+    animation: fadeInUp 1s ease 0.5s backwards; /* Add animation to project info */
+}
+
+.project-info p {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+    animation: fadeInUp 1s ease 0.6s backwards; /* Add animation to paragraph */
+}
+
+.project-info img {
+    width: 40px;
+    height:40px;
+    /* margin-right: 2rem; */
+    transition: transform 0.3s ease;
+    animation: fadeInUp 1s ease 0.7s backwards; /* Add animation to icons */
+}
+
+.project-info a:hover img {
+    transform: scale(1.4);
+}
+.project-link{
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+.multicolor-text {
+    text-align: center;
+    font-size: 0.7rem;
+    background: linear-gradient(to left,
+            rgba(10, 10, 10, 0.479),
+            rgb(247, 5, 17),
+            blue,
+            green,
+            rgb(111, 0, 255),
+            rgb(8, 233, 27),
+            red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contact-me {
+    margin: 4rem 2rem;
+    padding: 2rem;
+    background-color: rgb(7, 4, 43);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px white, 0 1px 3px white;
+    animation: fadeInUp 1s ease;
+    /* width: 50%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-me h3 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease 0.1s backwards;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    animation: fadeInUp 1s ease 0.2s backwards;
+    width: 50%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #fff;
+    font-size: 1.2rem;
+    animation: fadeInUp 1s ease 0.3s backwards;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.5rem;
+    border: 2px solid gold;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    animation: fadeInUp 1s ease 0.4s backwards;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+button[type="submit"] {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #FFD700;
+    color: rgb(7, 4, 43);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1s ease 0.5s backwards;
+}
+
+button[type="submit"]:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.model-container {
+    flex: 1;
+    max-width: 500px;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+}
+
+model-viewer {
+    width: 100%;
+    height: 400px;
+    /* background-color: #fff; */
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+/* Footer Section */
+.footer {
+    background-color: rgb(7, 4, 43);
+    padding: 1rem 0;
+    text-align: center;
+    /* border-top: 2px solid gold; */
+    box-shadow: 0 -4px 6px white, 0 -1px 3px white;
+}
+
+.footer-content {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-links a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+/* Keyframes for Fade-In-Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    nav .right ul {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        background-color: rgb(7, 4, 43);
+        transition: left 0.3s ease;
+    }
+    nav .right ul li {
+        margin: 15px 0;
+        text-align: center;
+    }
+    nav .menu-toggle {
+        display: flex;
+    }
+    nav .right ul.active {
+        left: 0;
+    }
+    .firstsection {
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstsection > div {
+        width: 80%;
+    }
+    .leftsection {
+        text-align: center;
+    }
+    .rightsection img {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
