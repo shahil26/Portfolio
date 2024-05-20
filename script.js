@@ -1,4 +1,12 @@
 function toggleMenu() {
+    if (document.getElementById("nav-links").classList.contains("active")) {
+      document.querySelector('nav .right').style.display = 'none';
+    }
+    else{
+      document.querySelector('nav .right').style.display = 'block';
+      document.querySelector('nav .menu-toggle').style.position = 'absolute';
+      document.querySelector('nav .menu-toggle').style.right = '20px';
+    }
     document.getElementById("nav-links").classList.toggle("active");
   }
 class TypeWriter {
